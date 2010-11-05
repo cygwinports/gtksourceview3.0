@@ -1,0 +1,11 @@
+ORIG_PN="gtksourceview"
+inherit gnome2
+
+DESCRIPTION="GTK+ syntax highlighting widget (GNOME 3.0 branch)"
+
+PATCH_URI="2.91.1-deps.patch"
+
+PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel girepository-GtkSource3.0"
+libgtksourceview3_0_0_CONTENTS="--exclude=gtk-doc --exclude=gir* usr/bin/*-3.0-0.dll usr/share/"
+libgtksourceview3_0_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/"
+girepository_GtkSource3_0_CONTENTS="usr/*/gir*/*-3.0.*"

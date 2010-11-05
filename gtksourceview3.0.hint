@@ -1,0 +1,7 @@
+category: Gnome
+sdesc: "GTK+ syntax highlighting widget (3.0 sources)"
+ldesc: "GtkSourceView is a text widget that extends the standard gtk+ 
+2.x text widget GtkTextView.
+
+It improves GtkTextView by implementing syntax highlighting and other
+features typical of a source code editor."

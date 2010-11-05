@@ -1,0 +1,9 @@
+category: Gnome
+requires: libgtksourceview3.0_0 libcairo-devel libgdk_pixbuf2.0-devel libglib2.0_0-devel libgtk3.0-devel gettext libpango1.0-devel libxml2-devel
+external-source: gtksourceview3.0
+sdesc: "GTK+ syntax highlighting widget (3.0 development)"
+ldesc: "GtkSourceView is a text widget that extends the standard gtk+ 
+2.x text widget GtkTextView.
+
+It improves GtkTextView by implementing syntax highlighting and other
+features typical of a source code editor."
