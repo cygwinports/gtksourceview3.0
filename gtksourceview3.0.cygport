@@ -1,11 +1,16 @@
 ORIG_PN="gtksourceview"
 inherit gnome2
 
-DESCRIPTION="GTK+ syntax highlighting widget (GNOME 3.0 branch)"
+NAME="gtksourceview3.0"
+VERSION=3.6.1
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GTK+ 3.0 syntax highlighting widget"
+DESCRIPTION="GtkSourceView is a text widget that extends the standard GTK+
+3.x text widget GtkTextView. It improves GtkTextView by implementing syntax
+highlighting and other features typical of a source code editor."
 
 PKG_NAMES="lib${PN}_0 lib${PN}-devel girepository-GtkSource3.0"
 libgtksourceview3_0_0_CONTENTS="--exclude=gtk-doc --exclude=gir* usr/bin/*-3.0-0.dll usr/share/"
 libgtksourceview3_0_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/ usr/share/gtk-doc/"
 girepository_GtkSource3_0_CONTENTS="usr/*/gir*/*-3.0.*"
-
-KEEP_LA_FILES="none"
