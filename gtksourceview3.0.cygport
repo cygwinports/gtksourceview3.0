@@ -2,7 +2,7 @@ ORIG_PN="gtksourceview"
 inherit gnome2
 
 NAME="gtksourceview3.0"
-VERSION=3.14.3
+VERSION=3.14.4
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GTK+ 3.0 syntax highlighting widget"
