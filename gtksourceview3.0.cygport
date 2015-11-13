@@ -2,7 +2,7 @@ ORIG_PN="gtksourceview"
 inherit gnome2
 
 NAME="gtksourceview3.0"
-VERSION=3.14.4
+VERSION=3.18.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GTK+ 3.0 syntax highlighting widget"
@@ -10,11 +10,17 @@ DESCRIPTION="GtkSourceView is a text widget that extends the standard GTK+
 3.x text widget GtkTextView. It improves GtkTextView by implementing syntax
 highlighting and other features typical of a source code editor."
 
-PKG_NAMES="lib${NAME}_1 lib${NAME}-common lib${NAME}-devel lib${NAME}-doc girepository-GtkSource3.0"
+PKG_NAMES="lib${NAME}_1 lib${NAME}-common lib${NAME}-devel lib${NAME}-doc
+	   girepository-GtkSource3.0 glade-gtksourceview vala-gtksourceview3.0"
 libgtksourceview3_0_1_REQUIRES="libgtksourceview3.0-common"
 libgtksourceview3_0_1_CONTENTS="usr/bin/cyggtksourceview-3.0-1.dll"
-libgtksourceview3_0_common_CONTENTS="--exclude=gtk-doc --exclude=gir* usr/share/"
+libgtksourceview3_0_common_CONTENTS="usr/share/doc/ usr/share/gtksourceview-3.0/ usr/share/locale/"
 libgtksourceview3_0_devel_CONTENTS="--exclude=gir* usr/include/ usr/lib/"
 libgtksourceview3_0_doc_CATEGORY="Doc"
 libgtksourceview3_0_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_GtkSource3_0_CONTENTS="usr/*/gir*/*-3.0.*"
+glade_gtksourceview_CATEGORY="Devel"
+glade_gtksourceview_CONTENTS="usr/share/glade/catalogs/gtksourceview.xml"
+vala_gtksourceview3_0_CONTENTS="usr/share/vala/vapi/gtksourceview-3.0.*"
+
+CYGCONF_ARGS="--enable-glade-catalog"
