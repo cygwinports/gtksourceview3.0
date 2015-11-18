@@ -10,6 +10,8 @@ DESCRIPTION="GtkSourceView is a text widget that extends the standard GTK+
 3.x text widget GtkTextView. It improves GtkTextView by implementing syntax
 highlighting and other features typical of a source code editor."
 
+PATCH_URI="3.18.1-glade-library.patch"
+
 PKG_NAMES="lib${NAME}_1 lib${NAME}-common lib${NAME}-devel lib${NAME}-doc
 	   girepository-GtkSource3.0 glade-gtksourceview vala-gtksourceview3.0"
 libgtksourceview3_0_1_REQUIRES="libgtksourceview3.0-common"
@@ -20,6 +22,7 @@ libgtksourceview3_0_doc_CATEGORY="Doc"
 libgtksourceview3_0_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_GtkSource3_0_CONTENTS="usr/*/gir*/*-3.0.*"
 glade_gtksourceview_CATEGORY="Devel"
+glade_gtksourceview_REQUIRES="libgtksourceview3.0_1"
 glade_gtksourceview_CONTENTS="usr/share/glade/catalogs/gtksourceview.xml"
 vala_gtksourceview3_0_CONTENTS="usr/share/vala/vapi/gtksourceview-3.0.*"
 
