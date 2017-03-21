@@ -2,7 +2,7 @@ ORIG_PN="gtksourceview"
 inherit gnome2
 
 NAME="gtksourceview3.0"
-VERSION=3.18.4
+VERSION=3.22.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GTK+ 3.0 syntax highlighting widget"
@@ -10,7 +10,7 @@ DESCRIPTION="GtkSourceView is a text widget that extends the standard GTK+
 3.x text widget GtkTextView. It improves GtkTextView by implementing syntax
 highlighting and other features typical of a source code editor."
 
-PATCH_URI="3.18.1-glade-library.patch"
+PATCH_URI="3.22.2-glade-library.patch"
 
 PKG_NAMES="lib${NAME}_1 lib${NAME}-common lib${NAME}-devel lib${NAME}-doc
 	   girepository-GtkSource3.0 glade-gtksourceview vala-gtksourceview3.0"
