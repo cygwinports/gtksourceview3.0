@@ -1,11 +1,11 @@
---- origsrc/gtksourceview-3.22.2/data/glade/gtksourceview.xml	2016-11-26 03:31:08.000000000 -0600
-+++ src/gtksourceview-3.22.2/data/glade/gtksourceview.xml	2017-03-05 14:23:03.210970900 -0600
+--- a/data/glade/gtksourceview.xml.in
++++ b/data/glade/gtksourceview.xml.in
 @@ -2,7 +2,7 @@
  <glade-catalog version="3.0"
                 supports="gtkbuilder"
                 name="gtksourceview"
--               library="gtksourceview-3.0"
-+               library="gtksourceview-3.0-1"
-                domain="gtksourceview-3.0"
+-               library="gtksourceview-@GSV_API_VERSION@"
++               library="gtksourceview-@GSV_API_VERSION@-1"
+                domain="gtksourceview-@GSV_API_VERSION@"
                 depends="gtk+"
-                book="gtksourceview-3.0">
+                book="gtksourceview-@GSV_API_VERSION@">
